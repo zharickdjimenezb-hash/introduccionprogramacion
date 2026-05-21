@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formulario de empleo</title>
+</head>
+<body>
+    <h1>FORMULARIO DE EMPLEO</h1>
+      <form action="">
+        <h2>datos del aspirante</h2>
+
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre">
+    <br><br>
+
+    <label for="apellido">Apellido :</label>
+    <input type="text"  id="apellido" name="apellido">
+    <br><br>
+    <label for="correoelectronico">Correo Electronico :</label>
+    <input type="email"  id="correoelectronico" name="email" placeholder="correo@ejemplo.com" required>
+      </form>
+      <br><br>
+      <form action="">
+    <label for="dsiponibilidad">fecha disiponibilidad</label>
+        <input type="date" id="disponibilidad" name="fecha_dis">
+        <br><br>
+          <label for="años">años de experiencia</label>
+        <input type="number" id="años" name="años" min="0" max="55">
+        <br><br>
+      </form>
+      <form action="">
+        <label for="estudio">---NIVEL DE ESTUDIO</label>
+        <select name="estudio" id="estudio"></select>
+        <option value="">seleccione una opcion</option>
+        <option value="BA">basico</option>
+        <option value="SU">superior</option>
+        <option value="AL">alto</option>
+        <br><br>
+        <h3>lenguaje de programacion que dominas</h3>
+        <input type="checkbox" id="programacion" name="programacion" required>
+        <label for="programacion">java</label>
+         <input type="checkbox" id="lenguaje" name="lenguaje" required>
+        <label for="lenguaje">python</label>
+         <input type="checkbox" id="java" name="javas" required>
+        <label for="java">java sript  </label>
+        <br><br>
+         <label for="mensaje">dejanos tu opinion</label>
+         <br>
+          <textarea name="mensaje" id="mensaje" rows="4" 
+          cols="50" placeholder="escribe aqui..."></textarea>
+        <br>
+        <button type="submit">enviar fomulario</button>
+        <button type="reset">limpiar formulario</button>
+
+      </form>
+     
+</body>
+</html>

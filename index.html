@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios</title>
+</head>
+<body>
+    <form action="">
+        <h2>Datos personales basicos</h2>
+
+        <label for="nombre de usuario">Nombre de usuario</label>
+        <input type="text" id="nombre de usuario" name="nombre" placeholder="ej: juan perez">
+
+    <br><br>
+
+    <label for="correousuario">Correo Usuario :</label>
+    <input type="email"  id="correousuario" name="email" placeholder="correo@ejemplo.com" required>
+    </form>
+    <form action="">
+        <h2>diferentes tipos de input</h2>
+
+        <label for="pass">contraseña :</label>
+        <input type="password" name="clave" id="pass">
+        <br><br>
+
+        <label for="edad">edad</label>
+        <input type="number" id="edad" name="edad" min="18" max="99">
+        <br><br>
+
+        <label for="nacimiento">fecha de nacimiento</label>
+        <input type="date" id="nacimiento" name="fecha_nac">
+        <br><br>
+        <p>Selecciona tu plan:</p>
+        <input type="radio" name="plan" id="plangratis" value="gratis">
+        <label for="plangratis">plan gratis</label>
+          <input type="radio" name="plan" id="planpro" value="pro">
+        <label for="planpro">plan pro</label>
+          <input type="radio" name="plan" id="planpremium" value="premiunm">
+        <label for="planpremium">plan premium</label>
+        <br><br>
+        <input type="checkbox" id="terminos" name="terminos" required>
+        <label for="terminos">acepto terminos y condiciones</label>
+        <br><br>
+        <button type="submit">enviar fomulario</button>
+        <button type="reset">limpiar formulario</button>
+    </form>
+    <form action="">
+        <h2>textarea y selecs</h2>
+        <label for="pais">De que pais nos visitas?</label>
+        <select name="pais" id="pais">
+            <option value="">---SELECCIONE UNA OPCION---</option>
+            <option value="CO">colombia</option>
+            <option value="AR">argentina</option>
+            <option value="PE">peru</option>
+            <option value="ES">españa</option>
+            <option value="EC">ecuador</option>
+
+        </select>
+        <br> <br>
+        <label for="mensaje">dejanos tu opinion</label>
+        <br>
+        <textarea name="mensaje" id="mensaje" rows="4" cols="50" placeholder="escribe aqui..."></textarea>
+    </form>
+</body>
+</html>

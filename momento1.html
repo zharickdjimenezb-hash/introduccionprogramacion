@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>El Libro De La Vida</title>
+    <link rel="stylesheet" href="deco.css">
+</head>
+<body>
+    <main>
+        <section id="sobre-mi">
+            <h1 class="jito">El Libro De La Vida</h1>
+            <p>El libro de la vida es una película animada (producida por Guillermo del Toro y dirigida por Jorge R. Gutiérrez) 
+               narrará la historia de Manolo, un joven torero y músico mexicano. Él y su mejor amigo, Joaquín,
+               compiten por el amor de su amiga de la infancia, María. La trama se centra en una apuesta 
+               divina entre los dioses del inframundo: La Catrina (reina del alegre Mundo de los Recordados)
+               y Xibalba (gobernante del oscuro Mundo de los Olvidados). Ellos apuestan sobre con quién
+               se casará María, lo que lleva a Manolo a embarcarse en un viaje épico a través de 
+               mundos mágicos para enfrentar sus miedos, proteger su pueblo y escribir su propio destino.</p>
+            
+            <div class="mi-cosa">
+                <img src="gaga.jpg" style="display:block;margin-left:auto;margin-right:auto;" alt="Imagen de El Libro de la Vida">
+            </div>
+        </section>
+
+        <section id="enlaces">
+            <h2>Cosas Importantes</h2> <nav>
+                <ul>
+                    <li><a href="http://filmaffinity.com/es/film628725.html">Estudio de Animación</a></li>
+                    <li><a href="https://es.wikipedia.org/wiki/El_libro_de_la_vida">Director</a></li>
+                    <li><a href="https://www.imdb.com/es/title/tt2262227/awards/">Nominaciones</a></li>
+                </ul>
+            </nav>
+        </section>
+
+        <br>
+
+        <section id="musica">
+            <h2>Canciones</h2>
+            <p>El libro de la Vida no solo se destaca por su increíble animación, sus maravillosas canciones han cautivado el oído de muchas personas, algunas de ellas son:</p>
+            
+            <table border="1">
+                <thead>
+                    <tr>
+                        <th>Canciones</th>
+                        <th>Descripción</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Te Amo y Más</strong></td>
+                        <td>Es la canción de amor principal de la película. Manolo se la canta a María, para expresar todo lo que siente por ella.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Creep</strong></td>
+                        <td>Esta canción le pertenece a Radiohead, en la película se adapta al estilo mariachi.</td>
+                    </tr> </tbody>
+            </table> </section>
+
+        <br>
+        <hr>
+        <br>
+
+        <section id="multimedia">
+            <div class="mi-casa">
+                <img src="zhari.jpg" style="display:block;margin-left:auto;margin-right:auto;" alt="Segunda imagen de la película">
+            </div>
+            <br>
+            <h2>Video</h2>
+            <div>
+    <iframe src="https://youtu.be/Z8iBblJ4vH4?si=WSPURUcd6i5AgvEA" frameborder="0" ></iframe>
+</div>
+        </section>
+
+        <section id="preferencias">
+            <h2>¿Quieres que salga una segunda película?</h2>
+            <p>Si quieres que sea así, llena este formulario:</p>
+            
+            <form action="yop">
+                <p>
+                    <label for="nombre">Nombre Completo:</label><br>
+                    <input type="text" id="nombre" name="nombre" placeholder="Tu nombre aquí">
+                </p>
+
+                <p>
+                    <label for="correo">Correo Electrónico:</label><br>
+                    <input type="email" id="correo" name="correo" required placeholder="ejemplo@correo.com">
+                </p>
+
+                <p>
+                    <label for="querer">¿Quieres una segunda película?</label><br>
+                    <select id="querer" name="posicion">
+                        <option value="yeah">SÍ</option>
+                        <option value="nop">NO</option>
+                    </select>
+                </p>
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+
+    </main>
+</body>
+</html>

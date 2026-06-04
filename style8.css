@@ -1,0 +1,41 @@
+.boton-whatsapp{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: green;
+    color: white;
+    padding: 15px;
+    border-radius: 50px;   
+}
+.caja-relativa{
+    position: relative;
+    width: 300px;
+    height: 300px;
+    background-color: aquamarine;
+    margin-bottom: 50px;
+
+}
+.caja-absoluta{
+    position:sticky;
+    top: 10px;
+    right: 10px;
+    background-color: red;
+    color: white;
+    padding: 10px;
+}
+.caja{
+    background-color: blue;
+    color:azure;
+    padding: 20px;
+    font-size: 20px;
+    border: 2px solid darkblue;
+}
+.contenedor-flex{
+    background-color: wheat;
+    height: 150px;
+    display:flexbox;
+    justify-content:space-between;
+    align-items: center;
+    gap: 20px;
+    position: sticky;
+}

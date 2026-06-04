@@ -1,0 +1,40 @@
+*{
+    font-size: 1.3rem;
+}
+
+
+body{
+    background-color: rgb(179, 67, 67);   
+}
+.cajita-modelo{
+    width: 70%;
+    height: 20%;
+    background-color: rgb(120, 162, 175);
+    border: 5px solid rgb(35, 48, 228);
+    padding: 20px;
+    margin: 4px 10px 40px 10px;
+    border-radius: 20px;
+
+}
+.dia{
+     color: rgb(7, 4, 10);
+    text-decoration:wavy;
+}
+.meh{
+    color: rgb(211, 53, 5);
+}
+.contenedor-flex{
+    background-color: wheat;
+    height: 150px;
+    display:inline-flex;
+    justify-content:space-between;
+    align-items: center;
+    gap: 20px;
+}
+.caja{
+    background-color: blue;
+    color:azure;
+    padding: 20px;
+    font-size: 20px;
+    border: 2px solid darkblue;
+}

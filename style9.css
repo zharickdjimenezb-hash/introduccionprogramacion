@@ -1,0 +1,39 @@
+body{
+    font-family:'Poppins', sans-serif;
+    margin: 0;
+    font-weight: 200;
+    font-style: normal;
+}
+/*el numeral se utiliza para llamar a un id*/
+.hero{
+ background-image: url(nubes.jpg);
+ background-size:cover;
+ background-position: center;
+ height: 100vh;
+ background-color: rgba(0, 0, 0, 0.3);
+ background-blend-mode: multiply;
+
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ text-align: center;
+}
+.hero-container{
+    color:beige;
+}
+.btn-primario{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: rgb(79, 15, 110);
+    background-color: rgb(110, 136, 219);
+    font-size: 1.2rem;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.btn-primario:hover{
+    background-color: rgb(111, 0, 255);
+    transform:translateY(-5px);
+    box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.2)
+}

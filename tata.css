@@ -1,0 +1,48 @@
+body{
+    font-family:'Poppins', sans-serif;
+    margin: 0;
+    font-weight: 200;
+    font-style: normal;
+    background-color: aquamarine;
+}
+/*el numeral se utiliza para llamar a un id*/
+.hero{
+ background-image: url(descarga.jpg);
+ background-size:cover;
+ background-position: center;
+ height: 100vh;
+ background-color: rgba(0, 0, 0, 0.3);
+ background-blend-mode: multiply;
+
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ text-align: center;
+}
+.hero-container{
+    color:rgb(37, 37, 1);
+    background-image: url(descarga.jpg);
+    border-radius: 10px;
+    padding: 20px;
+      
+
+}
+.btn-primario{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: rgb(110, 15, 15);
+    background-color: rgb(221, 193, 33);
+    font-size: 1.2rem;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.btn-primario:hover{
+    background-color: rgb(0, 89, 255);
+    transform:translateY(-5px);
+    box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.2)
+}
+.trete{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}

@@ -1,103 +1,209 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>El Libro De La Vida</title>
-    <link rel="stylesheet" href="deco.css">
+    <title>Ositos Cariñositos</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ole&display=swap" rel="stylesheet">
+   <style>
+    body{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+   margin: 0;
+    font-weight: 200;
+    font-style: normal;
+    font-size: 20px;
+    background-color: rgb(235, 217, 247);
+}
+.hero{
+background-image: url(images.jpg);
+ background-size:cover;
+ background-position: center;
+ height: 100vh;
+ background-color: rgba(0, 0, 0, 0.3);
+ background-blend-mode: multiply;
+
+ display: flex;
+ justify-content:center;
+ align-items: center;
+ text-align: center;
+}
+.wuasa{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: green;
+    color: white;
+    padding: 15px;
+    border-radius: 50px;   
+}
+.card{
+    border:2px solid rgb(215, 180, 243);
+    border-radius:10px;
+    padding:15px;
+    margin:15px;
+    width:300px;
+    display:inline-block;
+    background-color:rgb(255, 246, 246);
+    color: rgb(0, 0, 0);
+    height: 55%
+}
+.titulo{
+     font-family: "Ole", cursive;
+       font-size: 60px
+}
+.yoyo{
+    font-size: 60px;
+}
+h1{
+    font-family: "Ole", cursive;
+    font-size: 60px;
+}
+.yaya{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: rgb(250, 250, 250);
+    background-color: rgb(231, 88, 236);
+    font-size: 1.2rem;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.yaya:hover{
+    background-color: rgb(111, 0, 255);
+    transform:translateY(-5px);
+    box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.2)
+}
+.cosa{
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+.favoritos{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: rgb(241, 241, 241);
+    background-color: rgb(204, 99, 218);
+    font-size: 1.2rem;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.comprar{
+   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: rgb(231, 221, 227);
+    background-color: rgb(230, 101, 235);
+    font-size: 1.2rem;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+   </style>
 </head>
+
 <body>
-    <main>
-        <section id="sobre-mi">
-            <h1 class="jito">El Libro De La Vida</h1>
-            <p>El libro de la vida es una película animada (producida por Guillermo del Toro y dirigida por Jorge R. Gutiérrez) 
-               narrará la historia de Manolo, un joven torero y músico mexicano. Él y su mejor amigo, Joaquín,
-               compiten por el amor de su amiga de la infancia, María. La trama se centra en una apuesta 
-               divina entre los dioses del inframundo: La Catrina (reina del alegre Mundo de los Recordados)
-               y Xibalba (gobernante del oscuro Mundo de los Olvidados). Ellos apuestan sobre con quién
-               se casará María, lo que lleva a Manolo a embarcarse en un viaje épico a través de 
-               mundos mágicos para enfrentar sus miedos, proteger su pueblo y escribir su propio destino.</p>
-            
-            <div class="mi-cosa">
-                <img src="gaga.jpg" style="display:block;margin-left:auto;margin-right:auto;" alt="Imagen de El Libro de la Vida">
+    <div class="logo">
+            <h1>Los Peluches Cariñositos</h1>
+             <li><a href="#caracteristicas">🎀Productos</a></li>
+            <li><a href="#contacto">🎀Contacto</a></li>
+            <li><a href="#" class="btn-nav">🎀Comprar</a></li>
+        </ul>
+
+    <header class="hero">
+        <div class="nosotros">
+        <h1>Ositos Cariñositos</h1>
+            <p>¡Compra ya! Los Peluches de los Ositos Cariñositos estan de vuelta, revive tu infancia con estos hermosos peluches.</p>
+           <button class="yaya">¡Comprar Ya!</button>
+           
+        </div>
+    </header>
+
+    <section id="caracteristicas" class="quienes-somos">
+        <div class="titulo">
+            <h2 class="yoyo">Nuestros Productos</h2>
+        </div>
+        
+        <div class="nosotres">
+            <div class="card">
+                <img src="aaaa.jpg" alt="Alegrosita" class="cosa">
+                <h3>Producto 1</h3>
+                <p>Alegrosita (Cheer Bear): Es una osita rosa muy alegre. Su símbolo es un arcoíris, es muy bonita y alegre.</p>
+                <button class="comprar" onclick="comprar('osito')">Favoritos</button>
+                <button class="favoritos" onclick="favoritos('osita')">Comprar</button>
             </div>
-        </section>
-
-        <section id="enlaces">
-            <h2>Cosas Importantes</h2> <nav>
-                <ul>
-                    <li><a href="http://filmaffinity.com/es/film628725.html">Estudio de Animación</a></li>
-                    <li><a href="https://es.wikipedia.org/wiki/El_libro_de_la_vida">Director</a></li>
-                    <li><a href="https://www.imdb.com/es/title/tt2262227/awards/">Nominaciones</a></li>
-                </ul>
-            </nav>
-        </section>
-
-        <br>
-
-        <section id="musica">
-            <h2>Canciones</h2>
-            <p>El libro de la Vida no solo se destaca por su increíble animación, sus maravillosas canciones han cautivado el oído de muchas personas, algunas de ellas son:</p>
             
-            <table border="1">
-                <thead>
-                    <tr>
-                        <th>Canciones</th>
-                        <th>Descripción</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td><strong>Te Amo y Más</strong></td>
-                        <td>Es la canción de amor principal de la película. Manolo se la canta a María, para expresar todo lo que siente por ella.</td>
-                    </tr>
-                    <tr>
-                        <td><strong>Creep</strong></td>
-                        <td>Esta canción le pertenece a Radiohead, en la película se adapta al estilo mariachi.</td>
-                    </tr> </tbody>
-            </table> </section>
-
-        <br>
-        <hr>
-        <br>
-
-        <section id="multimedia">
-            <div class="mi-casa">
-                <img src="zhari.jpg" style="display:block;margin-left:auto;margin-right:auto;" alt="Segunda imagen de la película">
+            <div class="card">
+                <img src="222.jpg" alt="Gruñosito" class="cosa">
+                <h3>Producto 2</h3>
+                <p>Gruñosito (Grumpy Bear): Un osito azul gruñón pero muy noble. Su símbolo es una nube azul con lluvia y corazones.</p>
+            <button class="comprar" onclick="comprar('osito')">Favoritos</button>
+            <button class="favoritos" onclick="favoritos('osita')">Comprar</button>
             </div>
-            <br>
-            <h2>Video</h2>
-            <div>
-    <iframe src="https://youtu.be/Z8iBblJ4vH4?si=WSPURUcd6i5AgvEA" frameborder="0" ></iframe>
-</div>
-        </section>
-
-        <section id="preferencias">
-            <h2>¿Quieres que salga una segunda película?</h2>
-            <p>Si quieres que sea así, llena este formulario:</p>
             
-            <form action="yop">
-                <p>
-                    <label for="nombre">Nombre Completo:</label><br>
-                    <input type="text" id="nombre" name="nombre" placeholder="Tu nombre aquí">
-                </p>
+            <div class="card">
+                <img src="3333.jpg" alt="coratierno" class="cosa">
+                <h3>Producto 3</h3>
+                <p>Corazón Tierno (Tenderheart Bear): Es el líder principal del grupo. Su símbolo es un gran corazón rojo.</p>
+            <button class="comprar" onclick="comprar('osito')">Favoritos</button>
+            <button class="favoritos" onclick="favoritos('osita')">Comprar</button>
+            </div>
 
-                <p>
-                    <label for="correo">Correo Electrónico:</label><br>
-                    <input type="email" id="correo" name="correo" required placeholder="ejemplo@correo.com">
-                </p>
+             <div class="card">
+                <img src="4444.jpg" alt="Divertosito" class="cosa">
+                <h3>Producto 4</h3>
+                <p>Divertosito (Funshine Bear): Un osito amarillo muy divertido y enérgico. Su símbolo es un sol sonriente.</p>
+            <button class="comprar" onclick="comprar('osito')">Favoritos</button>
+            <button class="favoritos" onclick="favoritos('osita')">Comprar</button>
+            </div>
 
-                <p>
-                    <label for="querer">¿Quieres una segunda película?</label><br>
-                    <select id="querer" name="posicion">
-                        <option value="yeah">SÍ</option>
-                        <option value="nop">NO</option>
-                    </select>
-                </p>
-                <button type="submit">Enviar</button>
-            </form>
-        </section>
+             <div class="card">
+                <img src="5555.jpg" alt="Suerteosito" class="cosa">
+                <h3>Producto 5</h3>
+                <p>Suerteosito (Good Luck Bear): Un osito verde que atrae la buena suerte. Su símbolo es un trébol de cuatro hojas.</p>
+            <button class="comprar" onclick="comprar('osito')">Favoritos</button>
+            <button class="favoritos" onclick="favoritos('osita')">Comprar</button>
+            </div>
 
-    </main>
+            <div class="card">
+                <img src="gggg.jpg" alt="Generosita" class="cosa">
+                <h3>Producto 6</h3>
+                <p>Generosita (Share Bear): Es de color morado y le encanta compartir. Su símbolo son dos paletas cruzadas</p>
+            <button class="comprar" onclick="comprar('osito')">Favoritos</button>
+            <button class="favoritos" onclick="favoritos('osita')">Comprar</button>
+            </div>
+
+            <div class="card">
+                <img src="7777.jpg" alt="Amorosita" class="cosa">
+                <h3>Producto 7</h3>
+                <p>Amorosita (Love-a-Lot Bear): Una osita rosa encargada del amor. Su símbolo son dos corazones entrelazados</p>
+            <button class="comprar" onclick="comprar('osito')">Favoritos</button>
+            <button class="favoritos" onclick="favoritos('osita')">Comprar</button>
+            </div>
+
+             <div class="card">
+                <img src="8888.jpg" alt="Deseosito" class="cosa">
+                <h3>Producto 8</h3>
+                <p>Deseosito (Wish Bear): Es de color turquesa y ayuda a cumplir los deseos. Su símbolo es una estrella fugaz.</p>
+            <button class="comprar" onclick="comprar('osito')">Favoritos</button>
+            <button class="favoritos" onclick="favoritos('osita')">Comprar</button>
+            </div>
+        </div>
+    </section>
+<h2> Contactanos </h2>
+    <footer id="contacto">
+        <p> dale click al boton "Contactanos" para programar tu compra.</p>
+    </footer>
+    <div>
+        <button class="wuasa" id="comprar"> Contactanos</button>
+    </div>
+
 </body>
 </html>

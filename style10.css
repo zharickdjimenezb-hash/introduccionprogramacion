@@ -1,0 +1,54 @@
+body{
+    background-color: rgb(216, 193, 228);
+    transition: bacground-color 0.5s ease;
+}
+@media(max-width: 730px){
+    body{
+        background-color: #b671ee;
+    }
+}
+.contenedor-servicios{
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 40px;
+}
+.caja{
+    background-color: rgb(243, 130, 206);
+    border: 2px solid white;
+    padding: 30px;
+    width: 30%;
+    text-align: center;
+    font-size: 1.3rem;
+
+}
+@media(max-width: 730px){
+    .contenedor-servicios{
+        flex-direction: column;
+        padding: 20px;
+    }
+    .caja{
+        width: 100%;
+    }
+}
+@keyframes deslizaryaparecer{
+    0%{
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0)
+
+    }
+}
+.titulo-animado{
+    text-align: center;
+    color: blueviolet;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 2rem;
+    /* Nombreanimacion | duracion| tipo de ritmo|
+    retraso(opcional)|repeticiones (opcional)*/
+    animation: deslizaryaparecer 2s infinite;
+
+}
